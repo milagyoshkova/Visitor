@@ -1,15 +1,16 @@
-package visitor;
 
-public class Book implements Product {
+package com.journaldev.design.visitor;
+
+public class Book implements ItemElement {
 
 	private int price;
 	private String isbnNumber;
 	
-	public Book(String isbnNumber, int price) {
-		this.isbnNumber = isbnNumber;
-		this.price = price;
+	public Book(int cost, String isbn){
+		this.price=cost;
+		this.isbnNumber=isbn;
 	}
-
+	
 	public int getPrice() {
 		return price;
 	}
