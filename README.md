@@ -1,7 +1,8 @@
 # Visitor
 
-Step 1
-Create an abstract class implementing Clonable interface.
+
+Етап 1
+Създайте абстрактен клас, изпълняващ Clonable интерфейс.
 
 Shape.java
 
@@ -37,8 +38,8 @@ public abstract class Shape implements Cloneable {
       return clone;
    }
 }
-Step 2
-Create concrete classes extending the above class.
+Стъпка 2
+Създайте конкретни класове, разширяващи горния клас.
 
 Rectangle.java
 
@@ -79,8 +80,8 @@ public class Circle extends Shape {
       System.out.println("Inside Circle::draw() method.");
    }
 }
-Step 3
-Create a class to get concrete classes from database and store them in a Hashtable.
+Стъпка 3
+Създайте клас, за да получите конкретни класове от базата данни и ги съхранявайте в Hashtable.
 
 ShapeCache.java
 
@@ -113,8 +114,9 @@ public class ShapeCache {
       shapeMap.put(rectangle.getId(), rectangle);
    }
 }
-Step 4
-PrototypePatternDemo uses ShapeCache class to get clones of shapes stored in a Hashtable.
+Стъпка 4
+PrototypePatternDemo използва клас ShapeCache, за да получи клонове от форми, съхранявани в Hashtable.
+
 
 PrototypePatternDemo.java
 
@@ -132,8 +134,8 @@ public class PrototypePatternDemo {
       System.out.println("Shape : " + clonedShape3.getType());		
    }
 }
-Step 5
-Verify the output.
+Стъпка 5
+Проверете изхода.
 
 Shape : Circle
 Shape : Square
