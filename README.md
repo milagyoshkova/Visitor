@@ -4,6 +4,9 @@
 Етап 1
 Създайте абстрактен клас, изпълняващ Clonable интерфейс.
 
+
+
+
 Shape.java
 
 public abstract class Shape implements Cloneable {
@@ -38,8 +41,12 @@ public abstract class Shape implements Cloneable {
       return clone;
    }
 }
+
+
 Стъпка 2
 Създайте конкретни класове, разширяващи горния клас.
+
+
 
 Rectangle.java
 
@@ -80,8 +87,12 @@ public class Circle extends Shape {
       System.out.println("Inside Circle::draw() method.");
    }
 }
+
+
 Стъпка 3
 Създайте клас, за да получите конкретни класове от базата данни и ги съхранявайте в Hashtable.
+
+
 
 ShapeCache.java
 
